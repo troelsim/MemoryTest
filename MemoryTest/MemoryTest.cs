@@ -25,19 +25,19 @@ namespace MemoryTest
 			};
 
 			var childPage = new ChildPage();
-			var NavigationPage = new NavigationPage(content);
-			MainPage = NavigationPage;
+			var navigationPage = new NavigationPage(content);
+			MainPage = navigationPage;
 
 			var childVisible = false;
 			Device.StartTimer(TimeSpan.FromSeconds(0.5), () =>
 			{
 				if (childVisible)
 				{
-					NavigationPage.PopAsync();
+					navigationPage.PopAsync();
 				}
 				else
 				{
-					NavigationPage.PushAsync(childPage);
+					navigationPage.PushAsync(childPage);
 				}
 				childVisible = !childVisible;
 				return true;
