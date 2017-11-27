@@ -52,3 +52,11 @@ A java heap dump shows that a `ListViewRenderer` is instantiated each time the c
     [MonoDroid] 	at android.graphics.BitmapFactory.decodeResource(BitmapFactory.java:558)
     [MonoDroid] 	at android.graphics.BitmapFactory.decodeResource(BitmapFactory.java:588)
     [MonoDroid] 
+
+Screenshots from Android Profiler
+![Memory usage over time](https://us.v-cdn.net/5019960/uploads/editor/f8/0h59jv6krm1p.png "")
+
+Heap dump:
+
+![Heap dump](https://us.v-cdn.net/5019960/uploads/editor/wi/eo3s7kfw2207.png "")
+
